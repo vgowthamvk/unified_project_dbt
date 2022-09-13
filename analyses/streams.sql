@@ -1,1 +1,3 @@
-{{ create_stream('SANDBOX_DB', 'GOWTHAMV') }}
+{{generate_task('ATL_SOURCE','BINTYPES', ref('raw_bintypes'))}}
+
+{# {{generate_taskv2(source('ATL_SOURCE','BINTYPES'), ref('raw_bintypes'))}} #}
