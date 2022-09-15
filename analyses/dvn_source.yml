@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: DVN_SOURCE
-    database: SANDBOX_DB
-    schema: GOWTHAMV
-    tables:
-      - name: BINTYPES
-        identifier: DVNSRVDB_BINTYPES
