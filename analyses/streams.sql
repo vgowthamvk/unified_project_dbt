@@ -1,3 +1,9 @@
-{{generate_task('ATL_SOURCE','BINTYPES', ref('raw_bintypes'))}}
+{{create_unionv1('bintypes_snapshot')}}
 
-{# {{generate_taskv2(source('ATL_SOURCE','BINTYPES'), ref('raw_bintypes'))}} #}
+{{generate_task('ATL','BINTYPES',source('ATL_RAW','RAW_BINTYPES'))}}
+
+{{generate_task('CHI','BINTYPES',source('CHI_RAW','RAW_BINTYPES'))}}
+
+{{generate_task('DVN','BINTYPES',source('DVN_RAW','RAW_BINTYPES'))}}
+
+

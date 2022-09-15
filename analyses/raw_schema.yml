@@ -1,0 +1,18 @@
+version: 2
+
+sources: 
+  - name: ATL_RAW
+    database: SANDBOX_DB
+    schema: GOWTHAMV_ATLSRVDB_DBT
+    tables: &raw_tables_list
+      - name: RAW_BINTYPES
+
+  - name: CHI_RAW
+    database: SANDBOX_DB
+    schema: GOWTHAMV_CHISRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: DVN_RAW
+    database: SANDBOX_DB
+    schema: GOWTHAMV_DVNSRVDB_DBT
+    tables: *raw_tables_list

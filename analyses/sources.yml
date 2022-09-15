@@ -1,24 +1,20 @@
 version: 2
 
 sources:
-  - name: ATL_SOURCE
+  - name: ATL
     database: SANDBOX_DB
-    schema: GOWTHAMV
+    schema: GOWTHAMV_ATLSRVDB_DBT
     tables: &tables_list
       - name: BINTYPES
         # identifier: ATLSRVDB_BINTYPES
   
-  - name: CHI_SOURCE
+  - name: CHI
     database: SANDBOX_DB
-    schema: GOWTHAMV
+    schema: GOWTHAMV_CHISRVDB_DBT
     tables: *tables_list
 
-  - name: DAL_SOURCE
+  - name: DVN
     database: SANDBOX_DB
-    schema: GOWTHAMV
+    schema: GOWTHAMV_DVNSRVDB_DBT
     tables: *tables_list
 
-  - name: DVN_SOURCE
-    database: SANDBOX_DB
-    schema: GOWTHAMV
-    tables: *tables_list
