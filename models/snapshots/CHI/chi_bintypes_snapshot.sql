@@ -1,0 +1,1 @@
+{{create_snapshot(source('CHI_HISTORY', 'HISTORY_BINTYPES'),['BINTYPE'],'MODIFICATION_TIMESTAMP')}}

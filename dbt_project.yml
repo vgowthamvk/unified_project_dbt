@@ -34,7 +34,32 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   unified_project:
     +transient: false
-    +database: SANDBOX_DB
-    # unified:
-    #   +database: SANDBOX_DB
-    #   +schema: unified
+    snapshots:
+      +materialized: table
+      +database: SANDBOX_DB
+      ATL:
+        +schema: atl_snapshots
+      CHI:
+        +schema: chi_snapshots
+      DAL:
+        +schema: dal_snapshots
+      DV2:
+        +schema: dv2_snapshots
+      DV3:
+        +schema: dv3_snapshots
+      DVN:
+        +schema: dvn_snapshots
+      HAZ:
+        +schema: haz_snapshots
+      JAX:
+        +schema: jax_snapshots
+      LA:
+        +schema: la_snapshots
+    unified:
+      +database: SANDBOX_DB
+      +schema: unified
+      +materialized: table
+    reports:
+      +database: SANDBOX_DB
+      +schema: reports
+      +materialized: table
