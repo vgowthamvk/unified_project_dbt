@@ -1,0 +1,1 @@
+{{create_snapshot(source('DVN_HISTORY', 'HISTORY_ITEMDETAIL'),['RECORDID'],'MODIFICATION_TIMESTAMP')}}

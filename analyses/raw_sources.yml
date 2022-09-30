@@ -1,0 +1,58 @@
+version: 2
+
+sources: 
+  - name: ATL_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_ATLSRVDB_DBT
+    tables: &raw_tables_list
+      - name: HISTORY_SHIPMASTER
+      - name: HISTORY_CUSTOWNERS
+      - name: HISTORY_SHIPDETAIL
+      - name: HISTORY_CONTAINERS
+      - name: HISTORY_POHEADER
+      - name: HISTORY_VENDMASTER
+      - name: HISTORY_ITEMMASTER
+      - name: HISTORY_ITEMHISTORY
+      - name: HISTORY_PODETAIL
+      - name: HISTORY_ITEMDETAIL
+      - name: HISTORY_BINTYPES
+
+  - name: CHI_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_CHISRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: DVN_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_DVNSRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: DAL_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_DALSRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: DV2_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_DV2SRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: DV3_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_DV3SRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: HAZ_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_HAZSRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: JAX_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_JAXSRVDB_DBT
+    tables: *raw_tables_list
+
+  - name: LA_HISTORY
+    database: SANDBOX_DB
+    schema: GOWTHAMV_LASRVDB_DBT
+    tables: *raw_tables_list

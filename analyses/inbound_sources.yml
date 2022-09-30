@@ -1,0 +1,59 @@
+version: 2
+
+sources:
+  - name: ATL
+    database: PRD_INBOUND_EDGEDB
+    schema: ATLSRVDB
+    tables: &tables_list
+      - name: SHIPMASTER
+      - name: CUSTOWNERS
+      - name: SHIPDETAIL
+      - name: CONTAINERS
+      - name: POHEADER
+      - name: VENDMASTER
+      - name: ITEMMASTER
+      - name: ITEMHISTORY
+      - name: PODETAIL
+      - name: ITEMDETAIL
+      - name: BINTYPES
+
+  
+  - name: CHI
+    database: PRD_INBOUND_EDGEDB
+    schema: CHISRVDB
+    tables: *tables_list
+
+  - name: DVN
+    database: PRD_INBOUND_EDGEDB
+    schema: DVNSRVDB
+    tables: *tables_list
+
+  - name: DAL
+    database: PRD_INBOUND_EDGEDB
+    schema: DALSRVDB
+    tables: *tables_list
+
+  - name: DV2
+    database: PRD_INBOUND_EDGEDB
+    schema: DV2SRVDB
+    tables: *tables_list
+
+  - name: DV3
+    database: PRD_INBOUND_EDGEDB
+    schema: DV3SRVDB
+    tables: *tables_list
+
+  - name: HAZ
+    database: PRD_INBOUND_EDGEDB
+    schema: HAZSRVDB
+    tables: *tables_list
+
+  - name: JAX
+    database: PRD_INBOUND_EDGEDB
+    schema: JAXSRVDB
+    tables: *tables_list
+
+  - name: LA
+    database: PRD_INBOUND_EDGEDB
+    schema: LASRVDB
+    tables: *tables_list

@@ -1,0 +1,1 @@
+{{create_snapshot(source('LA_HISTORY', 'HISTORY_CUSTOWNERS'),['CUSTOWNER'],'MODIFICATION_TIMESTAMP')}}

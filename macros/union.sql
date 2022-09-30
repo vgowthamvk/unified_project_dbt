@@ -1,8 +1,17 @@
-{% macro create_union(table_name) %}
-    {% set whs = ['ATL','CHI','DAL','DVN'] %}
-
-    {% for wh in whs %}
-    select '{{wh}}' as WAREHOUSE, * from {{source(wh,table_name)}}
-    {% if not loop.last %}union all{% endif %}
+{% macro create_union(warehouses,table_name) %}
+    {% set output %}
+    {% set sources = [] %}
+    {% for wh in warehouses %}
+        {% set refname = wh~table_name %}
+        {% do sources.append(ref(refname)) %}
     {% endfor %}
+    {{ dbt_utils.union_relations(sources,source_column_name="DBT_SOURCE_RELATION") }}
+    {% endset %}
+    {% do return(output) %}
 {% endmacro %}
+
+
+
+
+
+

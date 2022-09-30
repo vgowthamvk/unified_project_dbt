@@ -1,0 +1,1 @@
+{{create_snapshot(source('ATL_HISTORY', 'HISTORY_BINTYPES'),['BINTYPE'],'MODIFICATION_TIMESTAMP')}}
