@@ -1,1 +1,1 @@
-{{create_snapshot(source('JAX_HISTORY', 'HISTORY_CUSTOWNERS'),['CUSTOWNER'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('JAX_HISTORY','HISTORY_CUSTOWNERS'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('JAX'),['CUSTOWNER'])}}

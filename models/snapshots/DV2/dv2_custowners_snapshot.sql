@@ -1,1 +1,1 @@
-{{create_snapshot(source('DV2_HISTORY', 'HISTORY_CUSTOWNERS'),['CUSTOWNER'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('DV2_HISTORY','HISTORY_CUSTOWNERS'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('DV2'),['CUSTOWNER'])}}

@@ -1,0 +1,1 @@
+{{create_update_snapshot(source('JAX_HISTORY','HISTORY_BINTYPES'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('JAX'),['BINTYPE'])}}

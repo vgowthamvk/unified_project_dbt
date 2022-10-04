@@ -1,1 +1,1 @@
-{{create_snapshot(source('DAL_HISTORY', 'HISTORY_SHIPDETAIL'),['CUSTOWNER','SONO','SOLINE'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('DAL_HISTORY','HISTORY_SHIPDETAIL'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('DAL'),['CUSTOWNER','SONO','SOLINE'])}}

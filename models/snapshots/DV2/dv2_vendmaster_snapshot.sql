@@ -1,1 +1,1 @@
-{{create_snapshot(source('DV2_HISTORY', 'HISTORY_VENDMASTER'),['CUSTOWNER','VENDID'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('DV2_HISTORY','HISTORY_VENDMASTER'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('DV2'),['CUSTOWNER','VENDID'])}}

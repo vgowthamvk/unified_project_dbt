@@ -1,1 +1,1 @@
-{{create_snapshot(source('LA_HISTORY','HISTORY_CONTAINERS'),['CONTAINERID'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('LA_HISTORY','HISTORY_CONTAINERS'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('LA'),['CONTAINERID'])}}

@@ -1,1 +1,1 @@
-{{create_snapshot(source('CHI_HISTORY', 'HISTORY_PODETAIL'),['CUSTOWNER','LINE','PONO'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('CHI_HISTORY','HISTORY_PODETAIL'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('CHI'),['CUSTOWNER','LINE','PONO'])}}

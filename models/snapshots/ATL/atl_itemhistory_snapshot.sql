@@ -1,1 +1,1 @@
-{{create_snapshot(source('ATL_HISTORY', 'HISTORY_ITEMHISTORY'),['RECORDID'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('ATL_HISTORY','HISTORY_ITEMHISTORY'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('ATL'),['RECORDID'])}}

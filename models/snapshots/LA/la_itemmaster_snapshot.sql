@@ -1,1 +1,1 @@
-{{create_snapshot(source('LA_HISTORY', 'HISTORY_ITEMMASTER'),['CUSTOWNER','ITEMNO'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('LA_HISTORY','HISTORY_ITEMMASTER'), 'MODIFICATION_TIMESTAMP',snapshot_timestamp('LA'),['CUSTOWNER','ITEMNO'])}}
