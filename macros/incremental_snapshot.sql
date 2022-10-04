@@ -4,7 +4,7 @@ with old_snapshot_ts as(
 ),
 incremental_history_data as(
   select * from {{history_relation}}
-  where {{ts_key}} between (select snapshot_ts from old_snapshot_ts) and '{{ts_value}}'
+  where {{ts_key}} between (select snapshot_ts from old_snapshot_ts) and {{ts_value}}
 ),
 closed_snap_values as(
   select * from {{old_snap_relation}}

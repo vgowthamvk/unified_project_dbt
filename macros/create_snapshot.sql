@@ -7,7 +7,7 @@
         {{composite_key}} {% if not loop.last %},{% endif %}
         {%- endfor %} order by VALID_FROM desc) as VALID_TO
         from {{history_relation}}
-        where {{ts_key}} <= '{{ts_value}}'
+        where {{ts_key}} <= {{ts_value}}
     {% endset %}
     {% do return(create_snapshot_stmt) %}
 {% endmacro %}
