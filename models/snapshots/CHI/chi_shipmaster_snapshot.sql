@@ -1,1 +1,1 @@
-{{create_snapshot(source('CHI_HISTORY', 'HISTORY_SHIPMASTER'),['CUSTOWNER','SONO'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('CHI_HISTORY','HISTORY_SHIPMASTER'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('CHI'),['CUSTOWNER','SONO'])}}

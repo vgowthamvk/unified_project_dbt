@@ -1,1 +1,1 @@
-{{create_snapshot(source('CHI_HISTORY', 'HISTORY_ITEMDETAIL'),['RECORDID'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('CHI_HISTORY','HISTORY_ITEMDETAIL'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('CHI'),['RECORDID'])}}

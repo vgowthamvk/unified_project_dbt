@@ -1,0 +1,1 @@
+{{create_update_snapshot(source('DV2_HISTORY','HISTORY_BINTYPES'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('DV2'),['BINTYPE'])}}

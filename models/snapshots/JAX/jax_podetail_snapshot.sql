@@ -1,1 +1,1 @@
-{{create_snapshot(source('JAX_HISTORY', 'HISTORY_PODETAIL'),['CUSTOWNER','LINE','PONO'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('JAX_HISTORY','HISTORY_PODETAIL'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('JAX'),['CUSTOWNER','LINE','PONO'])}}

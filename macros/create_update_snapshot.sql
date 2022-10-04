@@ -1,4 +1,4 @@
-{% macro create_update_snapshot(history_relation, old_snap_relation, ts_key,ts_value,composite_keys) %}
+{% macro create_update_snapshot(history_relation, ts_key,ts_value,composite_keys) %}
  {%- set target_table = model.get('alias', model.get('name')) -%}
 
  {% set target_relation_exists, target_relation = get_or_create_relation(

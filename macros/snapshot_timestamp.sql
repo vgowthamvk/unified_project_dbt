@@ -1,1 +1,1 @@
-{% macro snapshot_timestamp(warehouse) %}2022-09-28 03:55:17.122{% endmacro %}
+{% macro snapshot_timestamp(warehouse) %}current_timestamp{% endmacro %}

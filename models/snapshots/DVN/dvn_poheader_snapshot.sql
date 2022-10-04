@@ -1,1 +1,1 @@
-{{create_snapshot(source('DVN_HISTORY','HISTORY_POHEADER'),['CUSTOWNER','PONO'],'MODIFICATION_TIMESTAMP')}}
+{{create_update_snapshot(source('DVN_HISTORY','HISTORY_POHEADER'),'MODIFICATION_TIMESTAMP',snapshot_timestamp('DVN'),['CUSTOWNER','PONO'])}}

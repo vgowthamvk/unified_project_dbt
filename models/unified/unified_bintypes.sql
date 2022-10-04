@@ -1,3 +1,3 @@
-{{create_union(['atl_','chi_','dvn_'],'bintypes_snapshot')}}
+{{create_union(['atl_','chi_','dvn_','dal_','dv2_','dv3_','haz_','jax_','la_'],'bintypes_snapshot')}}
 
 
